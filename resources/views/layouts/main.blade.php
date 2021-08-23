@@ -17,13 +17,52 @@
     {{-- bootstrap css --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- link css --}}
-    <link rel="stylesheet" href="{{ url('assets/css/mobile/style.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/desktop/style.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/css/desktop/mediaquery.min.css') }}">
     <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <title>Karapau</title>
 </head>
 
 <body>
-  
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/sobre">SOBRE</a>
+                </li>
+                <li>
+                    <a href="/descarregar">DESCARREGAR</a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+                <li>
+                    <a href="/registrar">REGISTA-TE</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="nav-lateral">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/karapau-tech-532522212">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/projectokarapau">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Karapau-108879244721534/">Facebook</a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=351968375553&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20do%20Projeto%20Karapau">Whatsapp</a>
+            </li>
+        </ul>
+    </div>
     <div>
         @yield('content')
     </div>
